@@ -1,0 +1,78 @@
+.projContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.projHeader {
+    color: white;
+    font-size: 4em;
+    width: 100%;
+    margin-bottom: 0.25em;
+}
+
+.projHeader2 {
+    color: #BBB;
+    width: 80%;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.projBoxTable {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.projBoxContainer {
+    width: calc(26% - 10px);
+    margin: 15px; 
+    background: linear-gradient(to right, #222, rgb(86, 2, 75), #222);
+    border-radius: 5px;
+    text-align: left;
+    transition: transform 0.5s ease;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.projBoxContainer:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.projBoxheader {
+    text-align: center;
+    color: #DDD;
+    margin: 10px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.projImage {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.projDate {
+    color: #BBB;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+    .projContainer {
+        margin-bottom: 10px;
+    }
+    .projBoxTable {
+        flex-direction: column;
+    }
+    .projBoxContainer {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+}

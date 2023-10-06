@@ -1,0 +1,316 @@
+.portfolioContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolioCard {
+    color: #121212;
+    background: linear-gradient(to right, #000, #0f1428, #000);
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.lastCard {
+    margin-bottom: 60px;
+}
+
+.firstCard {
+    background: linear-gradient(to right, #000, #0f1428, rgb(40, 0, 35), #000);
+    width: 100%;
+    margin-top: 0px;
+    border-radius: 0;
+}
+
+.separateNav {
+    display: flex;
+    justify-content: space-between;
+    border: 1px;
+    border-color: aqua;
+}
+
+/* .navHeader {
+    margin: 5px;
+    font-size: 1.5em;
+    color: aqua;
+    margin-left: 20px;
+    text-decoration: none;
+} */
+
+.navContainer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+.navbarBG {
+    background-color: #000;
+    border: 1px;
+    border-color: aqua;
+    color: #111;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    /* transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out; */
+}
+.hideNav {
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.navButton {
+    color: #DDD;
+    margin: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+    text-decoration: none;
+}
+.navButton:hover{
+    color: rgb(50, 255, 255);
+}
+
+
+/* About Me Section */
+
+.aboutMeContainer {
+    display: flex;
+    align-items: stretch;
+}
+
+.aboutMeImageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.aboutMeImage {
+    max-width: 90%;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+}
+
+.aboutMeImage:hover {
+    transform: scale(1.02);
+}
+
+.aboutMeHeader {
+    color: white;
+    font-size: 4em;
+}
+
+.aboutMeLogoContainer {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    width: 100%;
+}
+
+.aboutMeLogoBar {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.aboutMeLogo {
+    width: 80%;
+    border-radius: 100%;
+    transition: transform 0.5s ease;
+}
+
+.aboutMeLogo:hover {
+    transform: scale(1.2);
+}
+
+.aboutMeInfoContainer {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutMeDesc {
+    color: #BBB;
+    width: 90%;
+    font-size: 1.2em;
+}
+
+.ambBox {
+    width: 22%;
+}
+
+.nonambBox {
+    width: 17%;
+}
+
+.aboutMeStatsBar {
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    /* align-items: center;
+    text-align: center; */
+}
+
+.aboutMeStatEduBar {
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: rgb(0, 217, 217)
+}
+
+.aboutMeStat {
+    width: 33%;
+    border-right: 1px solid;
+    border-color: #BBB;
+}
+
+.rightEnd {
+    border: 0px;
+}
+
+.aboutMeStatHeader {
+    color: #CCC;
+    margin-top: 0px;
+    margin-bottom: .5em;
+}
+
+.aboutMeStatBody {
+    color: #999;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.disableWarning {
+    font-size: 1.0em;
+    text-align: center;
+    color: #999;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.disableWarningColor {
+    color: #a35d80;
+}
+
+/* FACECARD */
+
+.FCContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FCInfoContainer {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+}
+
+
+.FCImageContainer {
+    margin-bottom: 30px;
+}
+
+.FCImage {
+    width: 40%;
+    border-radius: 100%;
+    border: 10px solid #9cb8d7;
+    transition: transform 0.4s ease-in-out;
+}
+
+.FCImage:hover {
+    transform: scale(1.02);
+}
+
+.FCHeader {
+    color: #9cb8d7;
+    font-size: 4em;
+    margin: 0;
+}
+
+.FCSubHeader {
+    color: #9cb8d7;
+    font-size: 1.6em;
+    margin-top: .7em;
+    margin-bottom: .5em;
+}
+
+.noMarg {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.25em;
+}
+
+
+@media (max-width: 900px) {
+    .FCHeader {
+        font-size: 2.5em;
+        width: 90%;
+    }
+    .FCSubHeader {
+        width: 90%;
+        font-size: 1.2em;
+    }
+    .FCImage {
+        width: 85%;
+    }
+    .aboutMeHeader{
+        font-size: 3em;
+    }
+    .aboutMeContainer {
+        flex-direction: column;
+    }
+    .aboutMeImageContainer {
+        display: none;
+    }
+    .aboutMeLogoBar {
+        margin-bottom: 30px;
+    }
+    .aboutMeStatsBar {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .aboutMeStat {
+        width: 90%;
+        border-right: 0;
+        border-bottom: 1px solid;
+        border-color: #BBB;
+        margin: auto;
+    }
+    .aboutMeStatEduBar {
+        width: 85%;
+    }
+    .aboutMeStatHeader {
+        margin-top: 10px;
+    }
+    .rightEnd {
+        border-bottom: 0;
+    }
+    .nonambBox {
+        display: none;
+    }
+    .ambBox {
+        width: 33%;
+        margin: auto;
+    }
+    .disableWarning {
+        margin-top: 30px;
+    }
+    .aboutMeHeader {
+        font-size: 3em;
+    }
+    .portfolioCard {
+        width: 90%;
+    }
+    .firstCard {
+        width: 100%;
+    }
+  }

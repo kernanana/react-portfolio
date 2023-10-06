@@ -1,0 +1,113 @@
+.expContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.expInfoContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.expImageBox {
+    flex: 1;
+}
+
+.firstSecHeader{
+    margin-top: .6em;
+}
+
+.expInfoBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+    margin-right: 40px;
+}
+
+.expHeader {
+    color: white;
+    font-size: 4em;
+    width: 100%;
+    margin-bottom: 0.25em;
+}
+
+.expImage {
+    width: 80%;
+    border-radius: 30px;
+    transition: transform 0.5s ease;
+}
+
+.expImage:hover {
+    transform: scale(1.02);
+}
+
+.expInfoSectionHeader {
+    margin-bottom: .1em;
+    font-size: 1.5em;
+    color: aqua;
+}
+
+.expInfoHeader {
+    color: aquamarine;
+    margin-bottom: .5em;
+    transition: transform 0.4s ease;
+}
+
+.expInfoHeader:hover {
+    transform: scale(1.04);
+}
+
+.expInfoBodyHeader {
+    margin-bottom: 0px;
+    color: aqua;
+}
+
+.expInfoBodyDate{
+    color: #DDD;
+    margin-top: 0;
+    margin-bottom: .9em;
+    font-size: 1.1em;
+}
+
+.expInfoBody{
+    color: #DDD;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 900px) {
+    .expImageBox {
+        display: none;
+    }
+    .expInfoBox {
+        margin-right: 0;
+        width: 80%;
+    }
+    .expInfoHeader {
+        width: 90%;
+    }
+    .expInfoBody {
+        width: 90%;
+    }
+}
+
+@media (min-width: 2000px) {
+    .expInfoSectionHeader {
+        font-size: 2em;
+    }
+    .expInfoHeader {
+        font-size: 1.6em;
+    }
+    .expInfoBodyDate {
+        font-size: 1.6em;
+    }
+    .expInfoBody {
+        font-size: 1.6em;
+    }
+}

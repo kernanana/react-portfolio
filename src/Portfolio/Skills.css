@@ -1,0 +1,132 @@
+.skillsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skillsHeader {
+    color: white;
+    font-size: 4em;
+    width: 100%;
+    margin-bottom: 0.25em;
+}
+
+.skillMap {
+    color: #BBB;
+    width: 80%;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.skillStarMap {
+    margin-top: 20px;
+    font-size: 1.3em;
+    color: #DDD;
+}
+
+.workStar{
+    color: greenyellow;
+}
+
+.projStar{
+    color: palevioletred;
+}
+
+.schoolStar{
+    color: lightblue;
+}
+
+.skillBoxContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: stretch;
+}
+
+.skillBox {
+   display: flex;
+   width: calc(26% - 10px);
+   margin: 15px; 
+   background: linear-gradient(to right, #222, rgb(1, 59, 59), #222);
+   border-radius: 5px;
+   text-align: left;
+   transition: transform 0.5s ease;
+   align-items: flex-start;
+}
+
+
+.skillIcon {
+    margin-top: 12px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.skillIcon svg {
+    width: 70%;
+    height: auto;
+}
+
+.skillIcon svg path{
+    fill: rgb(197, 5, 101);
+}
+
+.skillInfo {
+    flex: 4;
+}
+
+.skillBox:hover {
+    transform: scale(1.1);
+}
+
+.boxHeader {
+    color: #EEE;
+    margin-left: .5em;
+    margin-bottom: .2em;
+}
+
+.skillDesc {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #BBB;
+}
+
+.bottomSkill {
+    margin-bottom: 60px;
+}
+
+@media (max-width: 900px) {
+    .skillBoxContainer {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .skillBox {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .skillBoxContainer {
+        width: 90%;
+    }
+    .skillIcon {
+        display: none;
+    }
+    .boxHeader {
+        margin: .6em;
+    }
+    .skillInfo {
+        width: 100%;
+    }
+    .skillBox {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+    .bottomSkill {
+        margin-bottom: 20px;
+    }
+  }
