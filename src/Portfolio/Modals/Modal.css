@@ -29,6 +29,7 @@
   width: 55%;
   margin: auto;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25);
+  position: stretch !important;
 }
 
 .modalInfoContainer{
@@ -42,40 +43,76 @@
 }
 
 .modalHeader {
-    color: #552992;;
+    font-size: 2em;
+    color: #552992;
     text-align: center;
 }
 
 .modalText {
+    font-size: 1.3em;
     color: #9cb8d7;
     margin-bottom: 25px;
 }
 
 .closeModalButton {
     /* margin: 40px; */
-    font-size: 1.15em;
+    font-size: 1.4em;
     /* width: 120px;
     height: 40px; */
     background-color: #CC0066;
     color: aliceblue;
     border-radius: 6px;
+    transition: transform 0.23s ease-in-out;
+    margin-bottom: 40px;
+}
+
+.closeModalButton:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 .githubLink {
     color: #9cb8d7;
     font-weight: 500;
     margin: 30px;
+    font-size: 1.4em;
 }
 
 .imageContainer{
-    width: 80%;
+    min-width: 80%;
+}
+
+.link {
+    color: #2070ca;
 }
 
 .modalDescImg {
     width: 100%;
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 5px;
 }
 
 .modalDescImg:hover {
-    transform: scale(1.07);
+    transform: scale(1.00);
+}
+
+@media (max-width: 900px) {
+    .ReactModal__Content {
+        width: 75%;
+    }
+}
+
+@media (min-width: 2100px) {
+    .modalHeader {
+        font-size: 2.8em;
+    }
+    .modalText {
+        font-size: 1.7em;
+    }
+    .githubLink {
+        font-size: 1.8em;
+    }
+    .closeModalButton {
+        font-size: 1.9em;
+    }
 }

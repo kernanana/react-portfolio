@@ -19,7 +19,7 @@ class TreesModal extends React.Component {
                         characters (synonymous to nodes) to a word (synonymous to trees) in O(logn) 
                         time without creating degenerate trees.
                         </div>
-                        <div className="githubLink">Github Link: <a href=""></a>tspGeneticAlgorithm</div>
+                        <div className="githubLink">Github Link: <a className="link" href="https://github.com/kernanana/EditorTrees.git">Link To Editor Trees</a></div>
                         <button className="closeModalButton" onClick={this.props.onRequestClose}>Close Modal</button>
                     </div>
                     

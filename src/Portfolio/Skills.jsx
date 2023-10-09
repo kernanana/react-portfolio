@@ -10,10 +10,9 @@ class Skills extends React.Component {
                     Technical Skills
                 </h1>
                 <div className='skillMap'>These are technical skills that I have
-                developed so far in computer science. Though it would be amazing
-                to be an expert in all of them, it is simply not true right now.
-                That stated, I have experience in using these technologies in 
-                the workplace and academic settings and am looking to increase my
+                developed so far in computer science. Though I am not claiming to 
+                be an expert in all of them, these are skills that I have experience in using 
+                in the workplace and academic settings and am looking to increase my
                  mastery in them when opportune.
                 </div>
                 <div className='skillStarMap'>Work Experience<span className='workStar'>* </span>  
@@ -27,7 +26,7 @@ class Skills extends React.Component {
                         </div>
                         <div className='skillInfo'>
                             <h3 className='boxHeader'>Languages</h3>
-                            <div className='skillDesc'>Python<span className='workStar'>* </span>,
+                            <div className='importantSkills skillDesc'>Python<span className='workStar'>* </span>,
                             Java<span className='schoolStar'>*</span>,
                             C#<span className='workStar'>*</span>,
                             Javascript<span className='projStar'>*</span>,
@@ -45,7 +44,7 @@ class Skills extends React.Component {
                         </div>
                         <div className='skillInfo'>
                             <h3 className='boxHeader'>Technologies</h3>
-                            <div className='skillDesc'>React.js<span className='projStar'>* </span>,
+                            <div className='importantSkills skillDesc'>React.js<span className='projStar'>* </span>,
                             Microsoft Azure<span className='workStar'>*</span>,
                             AWS<span className='projStar'>*</span>,
                             Flask<span className='projStar'>*</span>, 
@@ -61,7 +60,7 @@ class Skills extends React.Component {
                         </div>
                         <div className='skillInfo'>
                             <h3 className='boxHeader'>Project Skills</h3>
-                            <div className='skillDesc'>Test-Driven Development<span className='schoolStar'>*</span>,
+                            <div className='importantSkills skillDesc'>Test-Driven Development<span className='schoolStar'>*</span>,
                             Agile<span className='workStar'>*</span>,
                             Extreme Programming<span className='projStar'>*</span> </div>
                         </div>
@@ -73,10 +72,10 @@ class Skills extends React.Component {
                         </div>
                         <div className='skillInfo'>
                             <h3 className='boxHeader'>Core CS Classes</h3>
-                            <div className='skillDesc'>Object-Oriented Software Development, Data Structures & Algorithms,
-                            Web Programming, Software Quality Assurance, Requirements Engineering, Software Project Management, Software Design,
-                            Software Architecture, Programming Language Concepts, Operating Systems, Computer Architecture, Database Systems,
-                            Formal Methods, Senior Capstone</div>
+                            <div className='skillDesc'>OO Programming, Data Structures & Algorithms,
+                            Web Programming, SQA, Requirements Engineering, Software Project Management, Software Design,
+                            Software Architecture, Programming Language Concepts, Operating Systems, Comp Arch, Databases,
+                        </div>
 
                         </div>
                     </div>

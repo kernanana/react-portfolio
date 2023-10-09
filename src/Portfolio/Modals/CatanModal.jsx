@@ -18,7 +18,7 @@ class CatanModal extends React.Component {
                         {/* <div className="imageContainer">
                             <img className="modalDescImg" src="images/TSPGraph.PNG" alt="" />
                         </div> */}
-                        <div className="githubLink">Github Link: <a href=""></a>tspGeneticAlgorithm</div>
+                        <div className="githubLink">Github Link: <a className="link" href="https://github.com/kernanana/CatanTestSuite.git">LinkToCatanTestSuite</a></div>
                         <button className="closeModalButton" onClick={this.props.onRequestClose}>Close Project</button>
                     </div>
                     

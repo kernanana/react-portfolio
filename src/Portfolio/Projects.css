@@ -40,7 +40,7 @@
 }
 
 .projBoxContainer:hover {
-    transform: scale(1.1);
+    transform: scale(1.06);
     cursor: pointer;
 }
 
@@ -74,5 +74,17 @@
         width: 90%;
         margin: auto;
         margin-bottom: 25px;
+    }
+}
+
+@media (min-width: 2100px) {
+    .projHeader2 {
+        font-size: 1.3em;
+    }
+    .projBoxheader {
+        font-size: 1.4em;
+    }
+    .projDate {
+        font-size: 1.3em;
     }
 }

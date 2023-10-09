@@ -33,7 +33,7 @@ class FaceCard extends React.Component {
       <div className='FCContainer' style={containerStyle}>
         <div className='FCInfoContainer'>
             <div className='FCImageContainer'>
-                <img className='FCImage' src="Images/kernanLJ.jpg" alt="" />
+                <img className='FCImage' src={`${process.env.PUBLIC_URL}/images/kernhiking2.JPG`} alt="" />
             </div>
             <h1 className='FCHeader'>Kernan Lee - A Portfolio</h1>
             <h3 className='FCSubHeader'>B.S. Software Engineering Student @ Rose-Hulman Institute of Technology '24</h3>            

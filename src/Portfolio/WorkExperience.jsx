@@ -5,12 +5,12 @@ class WorkExperience extends React.Component {
     render() {
         return (
             <div className='expContainer'>
-                <h1 className='expHeader'>Work Experience</h1>
                 <div className='expInfoContainer'>
                     <div className='expImageBox'>
-                        <img className="expImage" src="images/kern3.jpg" alt="" />
+                        <img className="expImage" src={`${process.env.PUBLIC_URL}/images/kernAtWork.jpg`} alt="" />
                     </div>
                     <div className='expInfoBox'>
+                        <h1 className='expHeader'>Work Experience</h1>
                         <h2 className='firstSecHeader expInfoSectionHeader'>Experience - Computer Science</h2>
                         <h3 className='expInfoHeader'>DevOps Software Engineering Intern - Hexagon MI | Camarillo, CA</h3>
                         <h5 className='expInfoBodyDate'>May to August 2023</h5>

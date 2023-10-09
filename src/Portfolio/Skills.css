@@ -86,6 +86,7 @@
     color: #EEE;
     margin-left: .5em;
     margin-bottom: .2em;
+    font-size: 1.3em;
 }
 
 .skillDesc {
@@ -96,6 +97,14 @@
 
 .bottomSkill {
     margin-bottom: 60px;
+}
+
+.importantSkills {
+    font-weight: 700;
+}
+
+.skillDesc {
+    font-size: 1.3em;
 }
 
 @media (max-width: 900px) {
@@ -128,5 +137,17 @@
     }
     .bottomSkill {
         margin-bottom: 20px;
+    }
+  }
+
+  @media (min-width: 2100px) {
+    .boxHeader {
+        font-size: 1.6em;
+    }
+    .skillDesc {
+        font-size: 1.6em;
+    }
+    .skillMap {
+        font-size: 1.3em;
     }
   }
