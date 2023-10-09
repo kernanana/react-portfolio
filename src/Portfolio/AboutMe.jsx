@@ -10,17 +10,17 @@ class AboutMe extends React.Component{
                         <div className='nonambBox'></div>
                         <div className='ambBox'>
                             <a href='https://www.rose-hulman.edu/academics/academic-departments/computer-science-software-engineering/index.html'>
-                                <img className='aboutMeLogo' src='images/rosehulmanlogo.png' alt=''></img>
+                                <img className='aboutMeLogo' src={`${process.env.PUBLIC_URL}/images/rosehulmanlogo.png`} alt=''></img>
                             </a>
                         </div>
                         <div className='ambBox'>
                             <a href='https://www.rhventures.org/'>
-                                <img className='aboutMeLogo' src='images/rhvlogo.jpg' alt=''></img>
+                                <img className='aboutMeLogo' src={`${process.env.PUBLIC_URL}/images/rhvlogo.jpg`} alt=''></img>
                             </a>
                         </div>
                         <div className='ambBox'>
                             <a href='https://hexagon.com/company/divisions/manufacturing-intelligence'>
-                                <img className='aboutMeLogo' src='images/hexagonlogo.png' alt=''></img>
+                                <img className='aboutMeLogo' src={`${process.env.PUBLIC_URL}/images/hexagonlogo.png`} alt=''></img>
                             </a>
                         </div>
                         <div className='nonambBox'></div>
@@ -30,9 +30,9 @@ class AboutMe extends React.Component{
                     </div>
                     <div className='aboutMeDesc'>
                         I am a current senior student at Rose-Hulman Institute of Technology 
-                        studying towards my BS in Software Engineering. Throughout my time,
-                        my main goal was to find an interesting area of study which 
-                        lead me to computer science.
+                        studying for a BS in Software Engineering. I originally started 
+                        as a chemical engineer but pursuing my interests eventually  led me to CS! I am 
+                        currently looking for a full-time offer for when I graduate!
                     </div>
                     <div className='aboutMeStatsBar'>
                         <div className='aboutMeStat'>
@@ -52,9 +52,7 @@ class AboutMe extends React.Component{
                         There is an option to disable it in the navigation bar.</div>
                 </div>
                 <div className='aboutMeImageContainer'>
-                    <h1 className="aboutMeHeader">
-                        <img src='images/kern3.jpg' className='aboutMeImage' alt=''></img>
-                    </h1>
+                    <img src={`${process.env.PUBLIC_URL}/images/kernSelfie.JPG`} className='aboutMeImage' alt=''></img>
                 </div>
             </div>
 

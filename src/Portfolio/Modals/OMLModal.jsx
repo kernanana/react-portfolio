@@ -22,9 +22,9 @@ class OMLModal extends React.Component {
                             4 following the Extreme Programming development approach.
                         </div>
                         <div className="imageContainer">
-                            <img className="modalDescImg" src="images/OMLWireframes.PNG" alt="" />
+                            <img className="modalDescImg" src={`${process.env.PUBLIC_URL}/images/OMLWireframes.PNG`} alt="" />
                         </div>
-                        <div className="githubLink">Github Link: <a href=""></a>not available in respect of client privacy</div>
+                        <div className="githubLink">Github Link: <a className="link" href=""></a>not available in respect of client privacy</div>
                         <button className="closeModalButton" onClick={this.props.onRequestClose}>Close Modal</button>
                     </div>
                     

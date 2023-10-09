@@ -4,6 +4,7 @@
     align-items: center;
     text-align: center;
     margin-bottom: 60px;
+    margin-top: 60px;
 }
 
 .expInfoContainer {
@@ -14,7 +15,10 @@
 }
 
 .expImageBox {
-    flex: 1;
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .firstSecHeader{
@@ -26,7 +30,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 2;
+    flex: 1;
     margin-right: 40px;
 }
 
@@ -97,7 +101,29 @@
     }
 }
 
-@media (min-width: 2000px) {
+@media (min-width: 1600px) {
+    .expInfoSectionHeader {
+        font-size: 1.4em;
+    }
+    .expInfoHeader {
+        font-size: 1.2em;
+    }
+    .expInfoBodyDate {
+        font-size: 1.2em;
+    }
+    .expInfoBody {
+        font-size: 1.2em;
+    }
+    .expInfoBox {
+        flex: 1.9;
+    }
+    .expImageBox {
+        flex: 1;
+    }
+}
+
+
+@media (min-width: 2100px) {
     .expInfoSectionHeader {
         font-size: 2em;
     }
@@ -109,5 +135,11 @@
     }
     .expInfoBody {
         font-size: 1.6em;
+    }
+    .expInfoBox {
+        flex: 2.4;
+    }
+    .expImageBox {
+        flex: 1;
     }
 }

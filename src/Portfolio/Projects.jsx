@@ -12,14 +12,14 @@ const projectData = [
   {
     header: "Organize my Life",
     modalName: "OMLModal",
-    image: "images/OMLLogo.png",
+    image: "images/OMLLogo.PNG",
     date: "August 2023",
     description: "Project description 1",
   },
   {
     header: "TSP Genetic Algorithm",
     modalName: "TSPModal",
-    image: "images/TSPRoute.png",
+    image: "images/TSPRoute.PNG",
     date: "August 2023",
     description: "Project description 1",
   },
@@ -40,7 +40,7 @@ const projectData = [
   {
     header: "Cookbook Database",
     modalName: "CookbookModal",
-    image: "images/Cookbook.png",
+    image: "images/Cookbook.PNG",
     date: "May 2022",
     description: "Project description 2",
   },
@@ -72,7 +72,7 @@ function Projects() {
     <div className="projContainer">
       <h1 className="projHeader">Projects</h1>
       <div className="projHeader2">
-        Here are some projects I worked on. Most are not likely kept up to date
+        Below are some projects I worked on. Most are not likely kept up to date
         but have served as great experiences.
       </div>
       <div className="projBoxTable">
@@ -97,7 +97,7 @@ function ProjectBox({ project, openModal }) {
   return (
     <div className="projBoxContainer" onClick={openModal}>
       <div className="projBoxheader">{project.header}</div>
-      <img className="projImage" src={project.image} alt="" />
+      <img className="projImage" src={`${process.env.PUBLIC_URL}/${project.image}`} alt="" />
       <div className="projDate">{project.date}</div>
     </div>
   );

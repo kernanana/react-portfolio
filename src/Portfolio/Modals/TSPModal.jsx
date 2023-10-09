@@ -22,9 +22,9 @@ class TSPModal extends React.Component {
                             population size of 100, elitism of 1, crossover rate of 50%, and mutation rate of 1%.  
                         </div>
                         <div className="imageContainer">
-                            <img className="modalDescImg" src="images/TSPGraph.PNG" alt="" />
+                            <img className="modalDescImg" src={`${process.env.PUBLIC_URL}/images/TSPGraph.PNG`} alt="" />
                         </div>
-                        <div className="githubLink">Github Link: <a href=""></a>tspGeneticAlgorithm</div>
+                        <div className="githubLink">Github Link: <a className="link" href="https://github.com/kernanana/TSPGeneticAlgorithm.git">LinkToTSPGeneticAlgorithm</a></div>
                         <button className="closeModalButton" onClick={this.props.onRequestClose}>Close Modal</button>
                     </div>
                     

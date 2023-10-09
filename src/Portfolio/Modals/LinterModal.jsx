@@ -19,9 +19,9 @@ class LinterModal extends React.Component {
                         </div>
                         <h2 className="modalHeader">Our Design</h2>
                         <div className="imageContainer">
-                            <img className="modalDescImg" src="images/LinterDesign.PNG" alt="" />
+                            <img className="modalDescImg" src={`${process.env.PUBLIC_URL}/images/LinterDesign.PNG`} alt="" />
                         </div>
-                        <div className="githubLink">Github Link: <a href=""></a>tspGeneticAlgorithm</div>
+                        <div className="githubLink">Github Link: <a className="link" href="https://github.com/kernanana/Team6JavaLinter.git">LinkToLinter</a></div>
                         <button className="closeModalButton" onClick={this.props.onRequestClose}>Close Modal</button>
                     </div>
                     

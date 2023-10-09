@@ -73,7 +73,7 @@
     color: #DDD;
     font-size: 1.0em;
     margin: 10px;
-    margin-right: 25px;
+    margin-right: 35px;
     margin-left: 25px;
     background-color: #CC0066;
     border-radius: 5px;
@@ -83,6 +83,7 @@
 
 .toggleSimulateButton:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 @media (max-width: 600px) {
@@ -91,5 +92,12 @@
     }
     .toggleSimulateButton {
         margin-right: 12px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .toggleSimulateButton {
+        width: 200px;
+        font-size: 1.3em;
     }
 }
