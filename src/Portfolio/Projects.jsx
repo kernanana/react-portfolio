@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Projects.css";
 import TSPModal from "./Modals/TSPModal";
 import CatanModal from "./Modals/CatanModal";
@@ -6,9 +6,17 @@ import LinterModal from "./Modals/LinterModal";
 import OMLModal from "./Modals/OMLModal";
 import TreesModal from "./Modals/TreesModal";
 import CookbookModal from "./Modals/CookbookModal";
+import StockWatchModal from "./Modals/StockWatchModal";
 
 
 const projectData = [
+  {
+    header: "Web Stock Watch",
+    modalName: "StockWatchModal",
+    image: "images/thumbnailStockWatch.PNG",
+    date: "October 2023",
+    description: "Project description 1",
+  },
   {
     header: "Organize my Life",
     modalName: "OMLModal",
@@ -55,8 +63,7 @@ const projectData = [
   // Add more project data as needed
 ];
 
-function Projects() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+function Projects({isModalOpen, setIsModalOpen}) {
   const [selectedProject, setSelectedProject] = useState({});
 
   const openModal = (project) => {
@@ -65,8 +72,13 @@ function Projects() {
   };
 
   const closeModal = () => {
+    document.body.style.overflow = 'unset';
     setIsModalOpen(false);
   };
+
+  // useEffect(() => {
+  //   document.body.style.overflow = 'unset';
+  // }, ) 
 
   return (
     <div className="projContainer">
@@ -112,6 +124,10 @@ function ProjectModal({ isOpen, onRequestClose, project }) {
   } else if (project.modalName === "CatanModal") {
     modal = (
       <CatanModal isOpen={isOpen} onRequestClose={onRequestClose} project={project} />
+    );
+  } else if (project.modalName === "StockWatchModal") {
+    modal = (
+      <StockWatchModal isOpen={isOpen} onRequestClose={onRequestClose} project={project} />
     );
   } else if (project.modalName === "LinterModal") {
     modal = (

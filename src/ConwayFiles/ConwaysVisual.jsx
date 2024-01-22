@@ -9,7 +9,7 @@ class GameOfLife extends React.Component {
     this.nextStateTimer = 1000;
     // this.rows = 50;
     // this.cols = 50;
-    this.rows = (window.innerHeight / 16); // 15px includes 14px cell size + 1px border
+    this.rows = (window.innerHeight / 14); // 15px includes 14px cell size + 1px border
     this.cols = (window.innerWidth / 15);
     console.log("Window width:", window.innerWidth);
     console.log("Rows:", this.rows);
@@ -94,7 +94,10 @@ class GameOfLife extends React.Component {
 
   handleResize() {
     console.log("RESIZED SCREEN");
-    this.rows = (window.innerHeight / 16); // 15px includes 14px cell size + 1px border
+    if (window.innerWidth/14 == this.rows) {
+      return
+    }
+    this.rows = (window.innerHeight / 14);
     this.cols = (window.innerWidth / 15);
     console.log("Window width:", window.innerWidth);
     console.log("Rows:", this.rows);

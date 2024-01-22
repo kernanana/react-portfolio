@@ -30,7 +30,8 @@ class AboutMe extends React.Component{
                     </div>
                     <div className='aboutMeDesc'>
                         I am a current senior student at Rose-Hulman Institute of Technology 
-                        studying for a BS in Software Engineering. I originally started 
+                        studying for a BS in Software Engineering. This a website I implemented to 
+                        capture my skills, experiences, and passions in one place. I originally started 
                         as a chemical engineer but pursuing my interests eventually  led me to CS! I am 
                         currently looking for a full-time offer for when I graduate!
                     </div>
@@ -51,9 +52,9 @@ class AboutMe extends React.Component{
                     <div className='disableWarning'><span className='disableWarningColor'>Note:</span> Conway's Game of Life is running in the background.
                         There is an option to disable it in the navigation bar.</div>
                 </div>
-                <div className='aboutMeImageContainer'>
+                {/* <div className='aboutMeImageContainer'>
                     <img src={`${process.env.PUBLIC_URL}/images/kernSelfie.JPG`} className='aboutMeImage' alt=''></img>
-                </div>
+                </div> */}
             </div>
 
         )

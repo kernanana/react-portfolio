@@ -1,15 +1,21 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./Modal.css";
 import Modal from 'react-modal';
 
 Modal.setAppElement('body');
 
-class TSPModal extends React.Component {
+function TSPModal ({isOpen, onRequestClose}) {
 
-    render () {
+    useEffect(() => {    
+        if(isOpen){
+          document.body.style.overflow = 'hidden';
+        }  
+    }, [isOpen])
+
+
         return (
             <div className="modalContainer">
-                <Modal style="" isOpen={this.props.isOpen} onRequestClose={this.props.onRequestClose}>
+                <Modal style="" isOpen={isOpen} onRequestClose={onRequestClose}>
                     <div className="modalInfoContainer">
                         <h2 className="modalHeader">TSP Genetic Algorithm</h2>
                         <div className="modalText">
@@ -25,13 +31,12 @@ class TSPModal extends React.Component {
                             <img className="modalDescImg" src={`${process.env.PUBLIC_URL}/images/TSPGraph.PNG`} alt="" />
                         </div>
                         <div className="githubLink">Github Link: <a className="link" href="https://github.com/kernanana/TSPGeneticAlgorithm.git">LinkToTSPGeneticAlgorithm</a></div>
-                        <button className="closeModalButton" onClick={this.props.onRequestClose}>Close Modal</button>
+                        <button className="closeModalButton" onClick={onRequestClose}>Close Project</button>
                     </div>
                     
                 </Modal>
             </div>
         )
     }
-}
 
 export default TSPModal;

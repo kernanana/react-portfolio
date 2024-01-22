@@ -11,7 +11,7 @@ class Skills extends React.Component {
                 </h1>
                 <div className='skillMap'>These are technical skills that I have
                 developed so far in computer science. Though I am not claiming to 
-                be an expert in all of them, these are skills that I have experience in using 
+                be an expert in all of them, these are skills that I have experience using 
                 in the workplace and academic settings and am looking to increase my
                  mastery in them when opportune.
                 </div>
@@ -74,7 +74,7 @@ class Skills extends React.Component {
                             <h3 className='boxHeader'>Core CS Classes</h3>
                             <div className='skillDesc'>OO Programming, Data Structures & Algorithms,
                             Web Programming, SQA, Requirements Engineering, Software Project Management, Software Design,
-                            Software Architecture, Programming Language Concepts, Operating Systems, Comp Arch, Databases,
+                            Software Architecture, Programming Language Concepts, Operating Systems, Comp Arch, Databases
                         </div>
 
                         </div>

@@ -1,12 +1,19 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./Modal.css";
 import Modal from "react-modal";
 
-class TreesModal extends React.Component {
-    render () {
+function TreesModal({isOpen, onRequestClose}) {
+
+    useEffect(() => {    
+        if(isOpen){
+          document.body.style.overflow = 'hidden';
+        }  
+    }, [isOpen])
+
+
         return (
             <div className="modalContainer">
-                <Modal style="" isOpen={this.props.isOpen} onRequestClose={this.props.onRequestClose}>
+                <Modal style="" isOpen={isOpen} onRequestClose={onRequestClose}>
                     <div className="modalInfoContainer">
                         <h2 className="modalHeader">Editor Trees</h2>
                         <div className="modalText">
@@ -20,13 +27,12 @@ class TreesModal extends React.Component {
                         time without creating degenerate trees.
                         </div>
                         <div className="githubLink">Github Link: <a className="link" href="https://github.com/kernanana/EditorTrees.git">Link To Editor Trees</a></div>
-                        <button className="closeModalButton" onClick={this.props.onRequestClose}>Close Modal</button>
+                        <button className="closeModalButton" onClick={onRequestClose}>Close Project</button>
                     </div>
                     
                 </Modal>
             </div>
         )
     }
-}
 
 export default TreesModal;

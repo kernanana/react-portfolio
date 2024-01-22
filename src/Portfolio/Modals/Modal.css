@@ -59,10 +59,14 @@
     font-size: 1.4em;
     /* width: 120px;
     height: 40px; */
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: #CC0066;
+    font-weight: 600;
     color: aliceblue;
     border-radius: 6px;
-    transition: transform 0.23s ease-in-out;
+    transition: transform 0.4s ease-in-out;
     margin-bottom: 40px;
 }
 

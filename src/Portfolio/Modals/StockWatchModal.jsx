@@ -4,7 +4,7 @@ import Modal from 'react-modal';
 
 Modal.setAppElement('body');
 
-function OMLModal({isOpen, onRequestClose}) {
+function StockWatchModal({isOpen, onRequestClose}) {
     useEffect(() => {    
         if(isOpen){
           document.body.style.overflow = 'hidden';
@@ -15,20 +15,18 @@ function OMLModal({isOpen, onRequestClose}) {
             <div className="modalContainer">
                 <Modal style="" isOpen={isOpen} onRequestClose={onRequestClose}>
                     <div className="modalInfoContainer">
-                        <h2 className="modalHeader">Senior Project: Organize My Life</h2>
+                        <h2 className="modalHeader">Stock Watch Project</h2>
                         <div className="modalText">
-                            A cross-platform application to file receipts, warranties, and documents on 
-                            personal & business assets.
+                            A Reactjs project hosted with AWS. It is currently hosted at: <a className="link" href="https://main.kernansstockwatchproject.com/">https://main.kernansstockwatchproject.com/</a>
                         </div>
                         <div className="modalText">
-                            Technologies used are React Native, AWS, and 
-                            MongoDB. This is a year long senior design project completed in a team of 
-                            4 following the Extreme Programming development approach.
+                            This was a solo project to learn both Reactjs and build a tool to help manage my retirement investment account. It's worth mentioning
+                            that this site has an API request rate limit.
                         </div>
                         <div className="imageContainer">
-                            <img className="modalDescImg" src={`${process.env.PUBLIC_URL}/images/OMLWireframes.PNG`} alt="" />
+                            <img className="modalDescImg" src={`${process.env.PUBLIC_URL}/images/stockWatchProject.PNG`} alt="" />
                         </div>
-                        <div className="githubLink">Github Link: <a className="link" href=""></a>not available in respect of client privacy</div>
+                        <div className="githubLink">Github Link: <a className="link" href=""></a>will share upon request</div>
                         <button className="closeModalButton" onClick={onRequestClose}>Close Project</button>
                     </div>
                     
@@ -37,4 +35,4 @@ function OMLModal({isOpen, onRequestClose}) {
         )
     }
 
-export default OMLModal;
+export default StockWatchModal;
