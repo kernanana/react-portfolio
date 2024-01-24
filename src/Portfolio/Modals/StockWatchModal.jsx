@@ -17,7 +17,7 @@ function StockWatchModal({isOpen, onRequestClose}) {
                     <div className="modalInfoContainer">
                         <h2 className="modalHeader">Stock Watch Project</h2>
                         <div className="modalText">
-                            A Reactjs project hosted with AWS. It is currently hosted at: <a className="link" href="https://main.kernansstockwatchproject.com/">https://main.kernansstockwatchproject.com/</a>
+                            A Reactjs project hosted with AWS. It is currently hosted at: <a className="link" href="https://main.kernansstockwatchproject.com/">Project Link</a>
                         </div>
                         <div className="modalText">
                             This was a solo project to learn both Reactjs and build a tool to help manage my retirement investment account. It's worth mentioning
